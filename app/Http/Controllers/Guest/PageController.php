@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Guest;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -9,6 +10,6 @@ class PageController extends Controller
   public function index()
   {
     $title = "Homepage";
-    return view('home', compact('title'));
+    return view('guest.home', compact('title'));
   }
 }
